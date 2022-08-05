@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace uc_3
+namespace uc_4
 {
     class Program
     {
@@ -31,19 +31,7 @@ namespace uc_3
 
             Console.WriteLine("Legth of first line is: " + lengthOfFirstLine);
             Console.WriteLine("Legth of  second line is: " + lengthOfSecondLine);
-            int status = lengthOfFirstLine.CompareTo(lengthOfSecondLine); if (status > 0)
-            {
-                Console.WriteLine("lengthOfFirstLine is greater than lengthOfSecondLine", lengthOfFirstLine, lengthOfSecondLine);
-            }
-
-            else if (status < 0)
-            {
-                Console.WriteLine(" lengthOfFirstLine is less than lengthOfSecondLine", lengthOfFirstLine, lengthOfSecondLine);
-            }
-            else
-            {
-                Console.WriteLine("lengthOfFirstLine is equals to lengthOfSecondLine", lengthOfFirstLine, lengthOfSecondLine);
-            }
+            Console.WriteLine(lengthOfFirstLine.CompareTo(lengthOfSecondLine));
 
         }
     }
