@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace uc_2
+namespace uc_3
 {
     class Program
     {
@@ -28,9 +28,22 @@ namespace uc_2
             Console.WriteLine("Enter b2 value:");
             int b2 = Convert.ToInt32(Console.ReadLine());
             double lengthOfSecondLine = Math.Sqrt((a2 - a1) * (a2 - a1) + (b2 - b1) * (b2 - b1));
-            Console.WriteLine("Legth of line is: " + lengthOfFirstLine);
-            Console.WriteLine("Legth of line is: " + lengthOfSecondLine);
-            Console.WriteLine(lengthOfFirstLine.Equals(lengthOfSecondLine));
+
+            Console.WriteLine("Legth of first line is: " + lengthOfFirstLine);
+            Console.WriteLine("Legth of  second line is: " + lengthOfSecondLine);
+            int status = lengthOfFirstLine.CompareTo(lengthOfSecondLine); if (status > 0)
+            {
+                Console.WriteLine("lengthOfFirstLine is greater than lengthOfSecondLine", lengthOfFirstLine, lengthOfSecondLine);
+            }
+
+            else if (status < 0)
+            {
+                Console.WriteLine(" lengthOfFirstLine is less than lengthOfSecondLine", lengthOfFirstLine, lengthOfSecondLine);
+            }
+            else
+            {
+                Console.WriteLine("lengthOfFirstLine is equals to lengthOfSecondLine", lengthOfFirstLine, lengthOfSecondLine);
+            }
 
         }
     }
